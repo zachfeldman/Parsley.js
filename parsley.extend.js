@@ -49,6 +49,10 @@ window.ParsleyConfig = window.ParsleyConfig || {};
       , afterdate: function ( val, elem, self) {
         return Date.parse($(elem).val()) < Date.parse(val);
       }
+
+      , afterafterdate: function ( val, elem, self) {
+        return Date.parse($(elem).val()) < Date.parse(val);
+      }
     }
     , messages: {
         minwords:       "This value should have %s words at least."
